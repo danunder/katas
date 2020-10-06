@@ -5,6 +5,8 @@ const sumLargestNumbers = function(data) {
     if (number >= largestNumber) {
       secondLargestNumber = largestNumber;
       largestNumber = number;
+    } else if (number > secondLargestNumber){
+      secondLargestNumber = number;
     }
   }
   return largestNumber + secondLargestNumber;
